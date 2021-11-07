@@ -1,0 +1,24 @@
+git相关操作:
+
+
+1、初始化本地存储区
+首先在一个空白的目录下执行一次git .init,此命令是为了初始化当前文件夹下的代码文件，会在当前目录下生成.git文件（死规定，任何新的文件夹下操作相关git命令都需要先执行此命令）
+2、提交本地文件到远程仓库
+命令:  git add ./python/hh.py
+3.此次提交的文件我需要给予注释
+命令：git commit -m  "my fisrt submit sui  bian xie" (注释内容一般和当前文件夹下实现的功能有关)
+4、如果此次为第一次提交到远程仓库，则需要与远程仓库建立关联
+git remote add origin git@github.com:yanglan6789/testHelloWord.git（此链接需要去github.com复制下来）
+5、在本地创建一个分支并与远程仓库关联
+git branch -M 分支名称  （eg: git branch -M testBranch）
+6、将刚才缓存区的内容提交到远程刚才建立的那个分支
+git push -u origin 分支名
+此步骤如果第一次提交可能会出现让填写邮箱和username 那就按照提示的命令填写
+git config --global user.email "648933288@qq.com"  （填写邮箱命令）
+git config --global user.name "yanglan6789"                （填写username命令）
+此步骤如果第一次提交会让你在本地生成一个key（公钥，私钥，一般需要将公钥放在github后台右上角个人信息那里找到settings->SSH and GPG kyes中，点击New SSH Key ,然后将
+id_rsa.pub 的内容复制到浏览器中即可）
+ssh-keygen -t rsa -C '648933288@qq.com'  （执行此命令生成秘钥）
+
+
+
