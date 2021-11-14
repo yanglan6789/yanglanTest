@@ -21,4 +21,5 @@ id_rsa.pub 的内容复制到浏览器中即可）
 ssh-keygen -t rsa -C '648933288@qq.com'  （执行此命令生成秘钥）
 
 
-yanglan6789.
+yanglan6789
+yang6789.
